@@ -1,0 +1,6 @@
+module Pods_TDDPractice_TDDPracticeTests {
+  umbrella header "Pods-TDDPractice-TDDPracticeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

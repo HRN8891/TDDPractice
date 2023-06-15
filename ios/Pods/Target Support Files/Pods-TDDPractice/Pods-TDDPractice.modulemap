@@ -1,0 +1,6 @@
+module Pods_TDDPractice {
+  umbrella header "Pods-TDDPractice-umbrella.h"
+
+  export *
+  module * { export * }
+}
