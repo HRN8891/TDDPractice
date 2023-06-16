@@ -1,1 +1,38 @@
-node_modules
+# Ignored files and directories for React Native
+
+# Dependency directories
+/node_modules
+/npm-debug.log*
+/yarn-error.log*
+/.yarn
+
+# Build directories
+/android/build
+/ios/build
+
+
+# iOS build artifacts
+/build
+/ios/Pods
+/ios/*.xcworkspace
+/ios/*.xcworkspace/*
+/ios/*.xcuserdata
+/ios/*.xcuserdata/*
+
+# Android build artifacts
+/android/app/build
+/android/gradle
+/android/gradlew
+/android/gradlew.bat
+/android/local.properties
+
+# Debugging and development files
+/*.env
+/*.env.*
+
+# IDE and editor specific files
+.vscode
+.idea
+*.iml
+*.log
+/.vs
