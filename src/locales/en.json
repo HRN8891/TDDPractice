@@ -17,14 +17,31 @@
     "password": "password"
   },
   "signUp": {
-    "email": "email",
-    "password": "password",
+    "email": "Email",
+    "password": "Password",
     "confirmPassword": "confirm password",
-    "signUp": "Sign Up"
+    "signUp": "Sign Up",
+    "signup": "Sign up",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "getStarted": "Get Started",
+    "passwordInstruction": "It must contain at least 8 characters",
+    "agreement": "By creating a new account you agree to the",
+    "and": " and",
+    "terms": " Terms of Conditions",
+    "privacyPolicy": " Privacy Policy",
+    "errorMesssage": "Please provide all details to complete the account registration."
   },
   "errorScreen": {
     "somethingWrong": "Oops something went wrong.",
     "appInProblem": "The app ran into a problem and could not continue. We apologise for any inconvenience this has caused! Press the button below to restart the app and sign back in. Please contact us if this issue persists.",
     "back": "Back to Sign in"
+  },
+  "welcomeScreen": {
+    "greenspace": "GREENSPACE",
+    "subTitle": "Virtual clubhouse for golfers",
+    "description": "The #1 golf community to share your love for the greatest game",
+    "alreadyAccount": "Already have an account?",
+    "login": "Login"
   }
 }

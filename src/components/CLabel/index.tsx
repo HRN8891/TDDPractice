@@ -1,12 +1,16 @@
 import React from 'react';
-import {Text, TextProps} from 'react-native';
+import {Text, TextProps, TextStyle} from 'react-native';
 import {setTestIdentifier} from '../../utilities/misc';
 
-interface ICLabel extends TextProps {}
+interface ICLabel extends TextProps {
+  style: TextStyle;
+  testID?: string;
+  onPress?: () => void;
+}
 
-function CLabel({children, style, testID}: ICLabel) {
+function CLabel({children, style, testID, onPress}: ICLabel) {
   return (
-    <Text {...setTestIdentifier(testID)} style={style}>
+    <Text {...setTestIdentifier(testID)} style={style} onPress={onPress}>
       {children}
     </Text>
   );

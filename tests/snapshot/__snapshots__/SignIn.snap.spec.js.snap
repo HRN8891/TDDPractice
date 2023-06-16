@@ -26,47 +26,34 @@ exports[`SignIn screen SignIn screen 1`] = `
     style={
       Array [
         Object {
-          "alignItems": "center",
-          "backgroundColor": "transparent",
-          "borderBottomColor": "#000000",
-          "borderBottomWidth": 2,
-          "flex": 1,
-          "flexDirection": "row",
-          "justifyContent": "center",
-          "margin": 5,
-          "maxHeight": 60,
-          "minHeight": 40,
+          "marginTop": 25.714285714285715,
         },
         undefined,
       ]
     }
   >
     <TextInput
-      accessibilityLabel=""
+      autoCapitalize="none"
+      caretHidden={false}
       keyboardType="email-address"
       onChangeText={[Function]}
-      placeholder="email"
-      placeholderTextColor="#000000"
-      selectionColor="#000000"
+      selectionColor="#189E66"
       style={
         Array [
           Object {
-            "backgroundColor": "transparent",
-            "color": "#000000",
-            "flex": 0.9,
-            "fontSize": 14,
-            "height": 37,
-            "marginBottom": 12,
-            "marginTop": 12,
-            "paddingBottom": 4,
+            "backgroundColor": "#F1F2F1",
+            "borderRadius": 21.428571428571427,
+            "fontSize": 32.14285714285714,
+            "height": 96.42857142857143,
             "paddingLeft": 10,
-            "paddingTop": 4,
+            "paddingVertical": 8.571428571428571,
           },
+          undefined,
+          undefined,
+          undefined,
           undefined,
         ]
       }
-      testID=""
-      underlineColorAndroid="transparent"
       value=""
     />
   </View>
@@ -74,48 +61,35 @@ exports[`SignIn screen SignIn screen 1`] = `
     style={
       Array [
         Object {
-          "alignItems": "center",
-          "backgroundColor": "transparent",
-          "borderBottomColor": "#000000",
-          "borderBottomWidth": 2,
-          "flex": 1,
-          "flexDirection": "row",
-          "justifyContent": "center",
-          "margin": 5,
-          "maxHeight": 60,
-          "minHeight": 40,
+          "marginTop": 25.714285714285715,
         },
         undefined,
       ]
     }
   >
     <TextInput
-      accessibilityLabel=""
+      autoCapitalize="none"
+      caretHidden={false}
       onChangeText={[Function]}
-      placeholder="password"
-      placeholderTextColor="#000000"
       returnKeyType="done"
       secureTextEntry={true}
-      selectionColor="#000000"
+      selectionColor="#189E66"
       style={
         Array [
           Object {
-            "backgroundColor": "transparent",
-            "color": "#000000",
-            "flex": 0.9,
-            "fontSize": 14,
-            "height": 37,
-            "marginBottom": 12,
-            "marginTop": 12,
-            "paddingBottom": 4,
+            "backgroundColor": "#F1F2F1",
+            "borderRadius": 21.428571428571427,
+            "fontSize": 32.14285714285714,
+            "height": 96.42857142857143,
             "paddingLeft": 10,
-            "paddingTop": 4,
+            "paddingVertical": 8.571428571428571,
           },
+          undefined,
+          undefined,
+          undefined,
           undefined,
         ]
       }
-      testID=""
-      underlineColorAndroid="transparent"
       value=""
     />
   </View>
@@ -125,7 +99,7 @@ exports[`SignIn screen SignIn screen 1`] = `
         Object {
           "alignItems": "center",
           "justifyContent": "center",
-          "marginTop": 42.857142857142854,
+          "width": "100%",
         },
         undefined,
       ]
@@ -146,13 +120,12 @@ exports[`SignIn screen SignIn screen 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#000000",
-          "borderRadius": 214.28571428571428,
+          "backgroundColor": "#189E66",
+          "borderRadius": 21.428571428571427,
           "justifyContent": "center",
           "opacity": 1,
-          "paddingBottom": 42.857142857142854,
-          "paddingTop": 42.857142857142854,
-          "width": 428.57142857142856,
+          "paddingVertical": 27.857142857142858,
+          "width": "100%",
         }
       }
       testID=""
@@ -161,10 +134,8 @@ exports[`SignIn screen SignIn screen 1`] = `
         style={
           Array [
             Object {
-              "alignSelf": "center",
               "color": "#ffffff",
               "fontSize": 34.285714285714285,
-              "fontWeight": "bold",
               "textAlign": "center",
             },
             undefined,

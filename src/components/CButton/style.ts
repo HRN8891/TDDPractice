@@ -1,27 +1,26 @@
 import {StyleSheet} from 'react-native';
 import {scale} from 'react-native-size-matters';
-import {Colors} from '../../utilities/Colors';
+import {COLOR} from '../../utilities/ColorsType';
+
+const {green, white} = COLOR.light;
 
 const style = StyleSheet.create({
   buttonStyle: {
-    backgroundColor: Colors.black1,
-    borderRadius: scale(100),
+    borderRadius: scale(10),
     justifyContent: 'center',
-    paddingTop: scale(20),
-    paddingBottom: scale(20),
-    width: scale(200),
+    backgroundColor: green,
+    paddingVertical: scale(13),
+    width: '100%',
   },
   buttonTextStyle: {
-    color: Colors.white,
+    color: white,
     fontSize: scale(16),
-    alignSelf: 'center',
-    fontWeight: 'bold',
     textAlign: 'center',
   },
   buttonContainerStyle: {
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: scale(20),
+    width: '100%',
   },
   disabled: {
     opacity: 0.4,

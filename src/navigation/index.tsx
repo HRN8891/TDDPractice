@@ -12,6 +12,14 @@ import {saveUserDetails} from '../store/auth/slice';
 import {getSecureStorageItem, storageKeys} from '../utilities/storageUtils';
 import {AuthStackParamList, HomeStackParamList} from './types';
 import {IUserApiResponse} from 'store/types';
+import Login from 'screens/Login';
+import WelcomeScreen from 'screens/WelcomeScreen';
+import {goBack} from './root';
+import {BackIcon} from '../utilities/Constant';
+import {TouchableOpacity} from 'react-native-gesture-handler';
+import {StyleSheet} from 'react-native';
+import {scale} from 'react-native-size-matters';
+import Register from 'screens/Register';
 
 const HomeStack = createStackNavigator<HomeStackParamList>();
 const AuthStack = createStackNavigator<AuthStackParamList>();
@@ -23,10 +31,24 @@ const options: StackNavigationOptions = {
 function AuthNavigator() {
   return (
     <AuthStack.Navigator
-      screenOptions={{
-        cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+      initialRouteName={SCREEN_NAMES.Welcome}
+      screenOptions={() => {
+        return {
+          cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+          title: '',
+          headerLeft: () => {
+            return (
+              <TouchableOpacity style={style.backButtonStyle} onPress={goBack}>
+                <BackIcon height={17} width={17} />
+              </TouchableOpacity>
+            );
+          },
+        };
       }}>
-      <AuthStack.Screen name={SCREEN_NAMES.SignIn} component={SignIn} options={options} />
+      <AuthStack.Screen name={SCREEN_NAMES.Welcome} component={WelcomeScreen} options={options} />
+      <AuthStack.Screen name={SCREEN_NAMES.Login} component={Login} />
+      <AuthStack.Screen name={SCREEN_NAMES.SignIn} component={SignIn} />
+      <AuthStack.Screen name={SCREEN_NAMES.Register} component={Register} options={options} />
       <AuthStack.Screen name={SCREEN_NAMES.SignUp} component={SignUp} options={options} />
     </AuthStack.Navigator>
   );
@@ -56,5 +78,11 @@ function MainNavigator() {
 
   return userData.email ? <HomeNavigator /> : <AuthNavigator />;
 }
+
+const style = StyleSheet.create({
+  backButtonStyle: {
+    paddingLeft: scale(18),
+  },
+});
 
 export default MainNavigator;

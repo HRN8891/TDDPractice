@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, TouchableOpacity, TextStyle, ViewStyle} from 'react-native';
 import style from './style';
-import { setTestIdentifier } from 'utilities/misc';
+import {setTestIdentifier} from 'utilities/misc';
 
 interface ICButton {
   textStyle?: TextStyle;
@@ -9,7 +9,7 @@ interface ICButton {
   onPress: () => any;
   text: string;
   disabled?: boolean;
-  testIDPrefix?: string;
+  testID: string;
 }
 
 function CButton({

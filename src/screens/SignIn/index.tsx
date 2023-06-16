@@ -71,7 +71,7 @@ function SignIn({navigation}: SignInScreenProps) {
           hidePassword={true}
           returnKeyType={'done'}
         />
-        <CButton onPress={handleSignIn} text={strings('signIn.signIn')} />
+        <CButton testID="SignIn" onPress={handleSignIn} text={strings('signIn.signIn')} />
       </KeyboardAwareScrollView>
 
       <View style={style.footer}>

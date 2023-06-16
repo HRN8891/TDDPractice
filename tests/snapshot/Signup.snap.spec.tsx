@@ -39,12 +39,12 @@ describe('SignUp screen Test', () => {
 
   test('Render Password', () => {
     const wrapper = render(<SignUp />);
-    wrapper.getByLabelText('Password');
+    wrapper.getByTestId('Password');
   });
 
   test('Render Confirm Password', () => {
     const wrapper = render(<SignUp />);
-    wrapper.getByLabelText('ConfrimPassword');
+    wrapper.getByTestId('ConfrimPassword');
   });
 
   test('Render Email Error', () => {

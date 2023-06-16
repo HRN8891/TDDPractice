@@ -8,6 +8,9 @@ export type HomeStackParamList = {
 export type AuthStackParamList = {
   [SCREEN_NAMES.SignIn]: undefined;
   [SCREEN_NAMES.SignUp]: undefined;
+  [SCREEN_NAMES.Login]: undefined;
+  [SCREEN_NAMES.Welcome]: undefined;
+  [SCREEN_NAMES.Register]: undefined;
 };
 
 export type DashboardScreenProps = StackScreenProps<HomeStackParamList, 'Dashboard'>;

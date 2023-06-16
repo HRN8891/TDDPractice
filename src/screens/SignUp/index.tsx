@@ -70,14 +70,14 @@ function SignUp() {
           value={email}
           onChangeText={setEmail}
           keyboardType="email-address"
-          testIDPrefix="Email"
+          testID="Email"
         />
         <CTextBox
           placeholder={strings('signUp.password')}
           value={password}
           onChangeText={setPassword}
           hidePassword={true}
-          testIDPrefix="Password"
+          testID="Password"
         />
         <CTextBox
           placeholder={strings('signUp.confirmPassword')}
@@ -85,13 +85,9 @@ function SignUp() {
           onChangeText={setConfirmPassword}
           hidePassword={true}
           returnKeyType={'done'}
-          testIDPrefix="ConfrimPassword"
+          testID="ConfrimPassword"
         />
-        <CButton
-          testIDPrefix="Signup Button"
-          onPress={handleSignUp}
-          text={strings('signUp.signUp')}
-        />
+        <CButton testID="Signup Button" onPress={handleSignUp} text={strings('signUp.signUp')} />
       </KeyboardAwareScrollView>
     </SafeAreaView>
   );

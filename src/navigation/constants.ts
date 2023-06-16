@@ -1,4 +1,7 @@
 export const SCREEN_NAMES = {
+  Welcome: 'Welcome',
+  Register: 'Register',
+  Login: 'Login',
   SignIn: 'SignIn',
   SignUp: 'SignUp',
   Dashboard: 'Dashboard',
