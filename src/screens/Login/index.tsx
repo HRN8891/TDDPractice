@@ -6,6 +6,7 @@ import CLabel from '../../components/CLabel';
 import CTextBox from '../../components/CTextBox';
 import Style from './style';
 import Wrapper from './Wrapper';
+import {performSignIn} from './Wrapper/LoginHelper';
 
 interface Focus {
   [name: string]: boolean;
@@ -42,7 +43,9 @@ const Login = () => {
     return hasError;
   }, [userData]);
 
-  const onSigninClick = useCallback(async () => {}, [dispatch, userData, validateForm]);
+  const onSigninClick = useCallback(async () => {
+    performSignIn();
+  }, []);
 
   const onChangeText = (value: string, key: string) => {
     setUserData({...userData, [key]: value});
@@ -63,7 +66,7 @@ const Login = () => {
 
   const onForgotClick = () => {};
   return (
-    <Wrapper subContainerStyle={Style.container}>
+    <Wrapper testId="Login Component" subContainerStyle={Style.container}>
       <CLabel style={Style.title}>Login</CLabel>
       <CTextBox
         testID="Email"
@@ -94,7 +97,7 @@ const Login = () => {
       <CLabel testID="ForgotButton" onPress={onForgotClick} style={Style.forgot}>
         Forgot password
       </CLabel>
-      <CButton testID="LoginButton" onPress={onSigninClick} text="Login" />
+      <CButton testIDPrefix="LoginButton" onPress={onSigninClick} text="Login" />
       <View style={Style.signupTextView}>
         <CLabel style={Style.signupText}> Not a Member yet? </CLabel>
         <CLabel testID="SignupButton" onPress={onSignupClick} style={Style.signup}>

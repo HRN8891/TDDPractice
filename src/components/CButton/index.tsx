@@ -9,7 +9,7 @@ interface ICButton {
   onPress: () => any;
   text: string;
   disabled?: boolean;
-  testID: string;
+  testIDPrefix: string;
 }
 
 function CButton({

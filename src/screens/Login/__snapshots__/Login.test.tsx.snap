@@ -1,0 +1,245 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login screen Login screen 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "backgroundColor": "#ffffff",
+      "flex": 1,
+    }
+  }
+  testID="Login Component"
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flex": 1,
+        },
+        Object {
+          "flex": 1,
+          "marginHorizontal": 42.857142857142854,
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#000000",
+          "fontSize": 42.857142857142854,
+        }
+      }
+    >
+      Login
+    </Text>
+    <View
+      style={
+        Array [
+          Object {
+            "marginTop": 25.714285714285715,
+          },
+          Object {
+            "marginTop": 64.28571428571428,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#4E5451",
+            "fontSize": 27.857142857142858,
+            "marginBottom": 8.571428571428571,
+          }
+        }
+      >
+        Email
+      </Text>
+      <TextInput
+        autoCapitalize="none"
+        autoFocus={true}
+        caretHidden={false}
+        keyboardType="email-address"
+        onBlur={[Function]}
+        onChangeText={[Function]}
+        onFocus={[Function]}
+        selectionColor="#189E66"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#F1F2F1",
+              "borderRadius": 21.428571428571427,
+              "fontSize": 32.14285714285714,
+              "height": 96.42857142857143,
+              "paddingLeft": 10,
+              "paddingVertical": 8.571428571428571,
+            },
+            undefined,
+            false,
+            undefined,
+            false,
+          ]
+        }
+        testID="Email"
+        value=""
+      />
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "marginTop": 25.714285714285715,
+          },
+          undefined,
+        ]
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#4E5451",
+            "fontSize": 27.857142857142858,
+            "marginBottom": 8.571428571428571,
+          }
+        }
+      >
+        Password
+      </Text>
+      <TextInput
+        autoCapitalize="none"
+        caretHidden={false}
+        onBlur={[Function]}
+        onChangeText={[Function]}
+        onFocus={[Function]}
+        secureTextEntry={true}
+        selectionColor="#189E66"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#F1F2F1",
+              "borderRadius": 21.428571428571427,
+              "fontSize": 32.14285714285714,
+              "height": 96.42857142857143,
+              "paddingLeft": 10,
+              "paddingVertical": 8.571428571428571,
+            },
+            undefined,
+            false,
+            undefined,
+            false,
+          ]
+        }
+        testID="PasswordTextField"
+        value=""
+      />
+    </View>
+    <Text
+      accessibilityLabel="ForgotButton"
+      onPress={[Function]}
+      style={
+        Object {
+          "color": "#189E66",
+          "fontSize": 25.714285714285715,
+          "marginVertical": 53.57142857142857,
+        }
+      }
+      testID="ForgotButton"
+    >
+      Forgot password
+    </Text>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "justifyContent": "center",
+            "width": "100%",
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        accessibilityLabel="LoginButton"
+        accessibilityRole="button"
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#189E66",
+            "borderRadius": 21.428571428571427,
+            "justifyContent": "center",
+            "opacity": 1,
+            "paddingVertical": 27.857142857142858,
+            "width": "100%",
+          }
+        }
+        testID="LoginButton"
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#ffffff",
+                "fontSize": 34.285714285714285,
+                "textAlign": "center",
+              },
+              undefined,
+            ]
+          }
+        >
+          Login
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "marginTop": 42.857142857142854,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#000000",
+          }
+        }
+      >
+         Not a Member yet? 
+      </Text>
+      <Text
+        accessibilityLabel="SignupButton"
+        onPress={[Function]}
+        style={
+          Object {
+            "color": "#189E66",
+          }
+        }
+        testID="SignupButton"
+      >
+        SignUp
+      </Text>
+    </View>
+  </View>
+</View>
+`;
